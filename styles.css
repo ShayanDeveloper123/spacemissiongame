@@ -12,21 +12,6 @@ body {
     will-change: background-image;
 }
 
-/* Background Animation */
-@keyframes backgroundChange {
-    0% { background-image: url('Background_1.jpg'); }
-    25% { background-image: url('Background_2.jpg'); }
-    50% { background-image: url('Background_3.jpg'); }
-    75% { background-image: url('Background_4.jpg'); }
-    100% { background-image: url('Background_5.jpg'); }
-}
-
-body {
-    animation: backgroundChange 60s infinite alternate;
-}
-
-
-
 .images-container{
     border: 3px solid #0c6471; /* Adjust the width (10px) as needed */
     background-color: rgba(30, 62, 96, 0.5); /* Adjust alpha (0.8) for transparency */
