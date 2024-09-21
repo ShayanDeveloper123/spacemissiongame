@@ -1,0 +1,541 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background-color: #00084e;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('Background/1.jpg');
+    will-change: background-image;
+}
+
+/* Background Animation */
+@keyframes backgroundChange {
+    0% { background-image: url('Background/1.jpg'); }
+    25% { background-image: url('Background/2.jpg'); }
+    50% { background-image: url('Background/3.jpg'); }
+    75% { background-image: url('Background/4.jpg'); }
+    100% { background-image: url('Background/5.jpg'); }
+}
+
+body {
+    animation: backgroundChange 60s infinite alternate;
+}
+
+
+
+.images-container{
+    border: 3px solid #0c6471; /* Adjust the width (10px) as needed */
+    background-color: rgba(30, 62, 96, 0.5); /* Adjust alpha (0.8) for transparency */
+}
+
+
+/*Description
+/* Container for overview sections */
+.overview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start; /* Align items to the top */
+}
+
+/* Short Description Styles */
+.short-description {
+    flex: 1 1 300px; /* Adjust the width as needed */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 20px; /* Space between short description and screenshots */
+}
+
+/* Game Screenshots Styles */
+.images-container {
+    flex: 2 1 600px; /* Adjust the width as needed */
+    border: 3px solid #0c6471;
+    background-color: rgba(30, 62, 96, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Long Description Styles */
+.long-description {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+
+/* Header Styles */
+header {
+    background-color: rgb(21, 25, 51 , 0.5);
+    padding: 20px 0;
+    border-bottom: 2px solid #003b3d;
+    text-align: center; /* Center align header content */
+}
+
+header h1 {
+    font-size: 3rem; /* Larger font size for more impact */
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif; /* Custom futuristic font */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.5);
+    background: linear-gradient(45deg, #0d7377, #14ffec);
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent to show gradient */
+    animation: titleGlow 1.5s infinite alternate;
+}
+
+@keyframes titleGlow {
+    from {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(0, 255, 255, 1);
+    }
+}
+
+/* Header Navigation Styles */
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align navigation items */
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #0d7377, #14ffec);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: linear-gradient(45deg, #14ffec, #0d7377);
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1494424891628-3d98fba34438'); /* Example space image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Content Section */
+.content-section {
+    padding: 60px 0;
+    /* background-color: #0d1b2a; */
+    border-top: 2px solid #0d7377;
+    border-bottom: 2px solid #0d7377;
+    text-align: center; /* Center align content */
+}
+
+.content-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #14ffec;
+    padding-bottom: 10px;
+}
+.privacy-content{
+    
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* Button Styles */
+button {
+    background-color: #14ffec;
+    color: #0d1b2a;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+    margin: 10px; /* Space around buttons */
+    display: inline-block; /* Align buttons inline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+}
+
+button:hover {
+    background-color: #0d7377;
+    transform: translateY(-2px);
+}
+
+/* Form Styles */
+form {
+    text-align: center; /* Center align form elements */
+    max-width: 800px;
+    margin: 0 auto; /* Center form on page */
+    padding: 20px;
+    background-color: #173b42;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+form label {
+    font-size: 1rem;
+}
+
+form input, form textarea {
+    width: calc(100% - 22px); /* Adjust width considering padding and border */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #14ffec;
+    border-radius: 8px;
+    background-color: #06142d;
+    color: #ffffff;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Screen Shots */
+/* General Container Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* General Container Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Game Icon Styling */
+.game-icon {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.game-icon img {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 40%;
+    border: 2px solid #14ffec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* General Container Styling */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Game Icon Styling */
+.game-icon img {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #14ffec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Download Button Styling */
+.download-button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #14ffec; /* Blue sci-fi color */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #0dc6c9; /* Darker blue for hover effect */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+/* Screenshots Section Styling */
+.game-screenshots {
+    margin-top: 30px;
+}
+
+.game-screenshots h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #14ffec;
+}
+
+.screenshot-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: center; */
+}
+
+.screenshot-item {
+    position: relative;
+    width: 100%;
+    max-width: 170px; /* Adjust as needed */
+}
+
+.screenshot-item img {
+    width: 193%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.screenshot-description {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    max-width: 60%; /* Adjust as needed */
+    text-align: left;
+    font-size: 0.6rem;
+    z-index: 10;
+}
+
+
+/* Feedback Display */
+/* Feedback Display */
+#feedbackDisplay {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(1, 38, 77, 0.95); /* Slightly increase opacity for better readability */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhance shadow for depth */
+    color: #14ffec;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#feedbackDisplay h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 2px solid #14ffec;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/* Feedback Item */
+/* Feedback Display */
+#feedbackDisplay {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(1, 38, 77, 0.95); /* Slightly increase opacity for better readability */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhance shadow for depth */
+    color: #14ffec;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#feedbackDisplay h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 2px solid #14ffec;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/* Feedback Item */
+.feedback-item {
+    background: linear-gradient(135deg, #3a6dbf, #1b376b); /* Gradient for dynamic look */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Stronger shadow for a more distinct card effect */
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effect */
+}
+
+.feedback-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+/* Feedback Header */
+.feedback-header {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    margin-bottom: 10px;
+}
+
+/* Feedback Name */
+.feedback-name {
+    font-size: 1.5rem;
+    color: #14ffec;
+    font-weight: 600;
+    margin-bottom: 5px; /* Space between name and date */
+}
+
+/* Feedback Date */
+.feedback-date {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8); /* Slightly muted for contrast */
+    margin-bottom: 10px; /* Space between date and message */
+}
+
+/* Feedback Message */
+.feedback-message {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Softer white for text contrast */
+    line-height: 1.5; /* Better readability */
+}
+
+
+/* Extra */
+/* Extra */
+/* Extra */
+/* Extra */
+/* Extra */
+/* Extra */
+
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+/* nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+} */
+
+/* Video controls */
+.video-item video {
+    width: 100%;
+    height: auto;
+}
+
+.hide-controls::-webkit-media-controls {
+    display: none !important;
+}
+
+/* Feedback display */
+#feedbackDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+
+.feedback-item {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.feedback-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-name {
+    font-weight: bold;
+}
+
+.feedback-date {
+    font-style: italic;
+}
+
+/* Form styling */
+#feedbackForm {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#feedbackForm input, #feedbackForm textarea {
+    width: calc(100% - 22px);
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
