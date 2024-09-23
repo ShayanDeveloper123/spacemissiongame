@@ -8,24 +8,8 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('Background/1.jpg');
     will-change: background-image;
 }
-
-/* Background Animation */
-@keyframes backgroundChange {
-    0% { background-image: url('Background/1.jpg'); }
-    25% { background-image: url('Background/2.jpg'); }
-    50% { background-image: url('Background/3.jpg'); }
-    75% { background-image: url('Background/4.jpg'); }
-    100% { background-image: url('Background/5.jpg'); }
-}
-
-body {
-    animation: backgroundChange 60s infinite alternate;
-}
-
-
 
 .images-container{
     border: 3px solid #0c6471; /* Adjust the width (10px) as needed */
